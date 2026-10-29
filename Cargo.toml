@@ -1,6 +1,6 @@
 [package]
 name = "lnk"
-version = "0.6.4"
+version = "0.6.5"
 authors = [
     "Lily Hopkins <lily@hpkns.uk>",
     "Simon Buchan <simon.buchan.nz@gmail.com>",
@@ -10,7 +10,7 @@ edition = "2021"
 description = "A Rust library to parse and write Windows shortcut files (.lnk)"
 license = "MIT"
 repository = "https://github.com/lilopkins/lnk-rs"
-rust-version = "1.85"
+rust-version = "1.89"
 
 [features]
 default = ["serde"]
@@ -38,7 +38,7 @@ required-features = ["binwrite"]
 log = "0.4.11"
 bitflags = "2.9"
 chrono = "0.4.23"
-binrw = { git = "https://github.com/jam1garner/binrw", rev = "e41a7e2" }
+binrw = "0.15.2"
 getset = "0.1"
 thiserror = "2.0"
 encoding_rs = "0.8"
@@ -57,7 +57,7 @@ anyhow = { version = "1.0", optional = true }
 
 stability = { version = "0.2.1", optional = true }
 num-traits = "0.2.19"
-num-derive = "0.4.2"
+num-derive = "0.5.1"
 
 [dev-dependencies]
 pretty_env_logger = "0.5.0"

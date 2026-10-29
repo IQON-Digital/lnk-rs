@@ -8,6 +8,7 @@ on:
 jobs:
   publish:
     name: Publish
+    if: github.repository == 'lilopkins/lnk-rs'
     runs-on: ubuntu-latest
 
     steps:
