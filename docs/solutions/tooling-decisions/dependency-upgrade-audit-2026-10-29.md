@@ -17,3 +17,5 @@ Use released binrw 0.15.2 in both manifests and remove the unused fuzz-only binr
 ## Gotchas
 
 Run `cargo nextest run --locked --all-features` to exercise writing as well as reading. Check the separate fuzz manifest with `cargo check --locked --manifest-path fuzz/Cargo.toml`. Windows compilation uses `cargo xwin check --locked --target x86_64-pc-windows-msvc --all-targets --all-features`; this does not execute Windows binaries. Check advisories with `cargo deny --all-features check advisories`.
+
+The crates.io `lnk` package belongs to upstream `lilopkins/lnk-rs`. The inherited publishing job is restricted to that repository; IQON consumes fork changes by Git revision and must not publish under the upstream crate name.
